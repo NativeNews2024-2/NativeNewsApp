@@ -71,7 +71,52 @@ DB_NAME=news_app
 JWT_SECRET=sua_chave_secreta
 ```
 
+2. O seu banco de dados precisa conter as tabelas corretas e deve estar com o nome que você citou no .env:
+
+```
+-- Criar o banco de dados
+CREATE DATABASE NativeNews_db;
+
+-- Usar o banco de dados criado
+USE NativeNews_db;
+
+-- Criar tabela de usuários
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Criar tabela de favoritos
+CREATE TABLE favorites (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    imageUrl VARCHAR(255),
+    newsUrl VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+```
+
 ## 🏃 Rodando a Aplicação
+
+1. No client você só precisa usar esse comando:
+
+```
+expo start
+```
+
+2. No backend, verifique se seu banco de dados já está configurado da forma correta e rode esse comando:
+
+```
+npm run dev
+```
 
 ### Desenvolvimento Backend
 ```bash
@@ -83,12 +128,6 @@ npm run dev
 ```bash
 cd front/newsapp
 expo start
-```
-
-## 🐳 Implantação com Docker
-
-```bash
-docker-compose up --build
 ```
 
 ## ✨ Funcionalidades
@@ -109,7 +148,7 @@ docker-compose up --build
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE.md para detalhes.
+Este projeto está licenciado sob a Licença GNU - veja o arquivo LICENSE.md para detalhes.
 
 ## 🛠️ Problemas Comuns
 
@@ -119,9 +158,10 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE.md par
 
 ## 📞 Contato
 
-Seu Nome - seu-email@exemplo.com
+Seu Nome - macedo270701@gmail.com
 
 Projeto Link: [https://github.com/seu-usuario/news-app]
+
 ```
 
 ## 🔍 Próximos Passos
