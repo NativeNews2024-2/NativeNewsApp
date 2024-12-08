@@ -8,23 +8,23 @@ Este é um aplicativo fullstack de notícias que permite aos usuários personali
 
 1. Login
 
-![Tela de Login](nativenewsdocs\images\login.jpg)
+![Tela de Login](nativenewsdocs/images/login.jpg)
 
 2. Cadastro 
 
-![tela de Cadastro](nativenewsdocs\images\criar-conta.jpg)
+![tela de Cadastro](nativenewsdocs/images/criar-conta.jpg)
 
 3. Home
 
-![Homepage](nativenewsdocs\images\noticias.jpg)
+![Homepage](nativenewsdocs/images/noticias.jpg)
 
 4. Favoritos
 
-![Noticias Favoritas](nativenewsdocs\images\noticias-favoritas.jpg)
+![Noticias Favoritas](nativenewsdocs/images/noticias-favoritas.jpg)
 
 5. Categorias diferentes
 
-![Categorias de Noticias](nativenewsdocs\images\categorias.jpg)
+![Categorias de Noticias](nativenewsdocs/images/categorias.jpg)
 
 ## 🚀 Tecnologias Utilizadas
 
