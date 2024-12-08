@@ -4,6 +4,28 @@
 
 Este é um aplicativo fullstack de notícias que permite aos usuários personalizar suas preferências de conteúdo, visualizar notícias e salvar artigos favoritos. Desenvolvido com tecnologias modernas para proporcionar uma experiência de usuário fluida e responsiva.
 
+## 📸 Imagens
+
+1. Login
+
+![Tela de Login](nativenewsdocs\images\login.jpg)
+
+2. Cadastro 
+
+![tela de Cadastro](nativenewsdocs\images\criar-conta.jpg)
+
+3. Home
+
+![Homepage](nativenewsdocs\images\noticias.jpg)
+
+4. Favoritos
+
+![Noticias Favoritas](nativenewsdocs\images\noticias-favoritas.jpg)
+
+5. Categorias diferentes
+
+![Categorias de Noticias](nativenewsdocs\images\categorias.jpg)
+
 ## 🚀 Tecnologias Utilizadas
 
 ### Frontend
@@ -118,17 +140,6 @@ expo start
 npm run dev
 ```
 
-### Desenvolvimento Backend
-```bash
-cd back-end
-npm run dev
-```
-
-### Desenvolvimento Frontend
-```bash
-cd front/newsapp
-expo start
-```
 
 ## ✨ Funcionalidades
 
@@ -140,15 +151,12 @@ expo start
 
 ## 🤝 Contribuição
 
-1. Faça um fork do projeto
-2. Crie sua feature branch (`git checkout -b feature/NovaFuncionalidade`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
-4. Push para a branch (`git push origin feature/NovaFuncionalidade`)
-5. Abra um Pull Request
+- Siga as instruções aqui nessa página: [CONTRIBUTING](CONTRIBUTING.md)
+- Verifique o guia prático de como utilizar o Git aqui: [Guia de GIT](nativenewsdocs/GuiadeBoasPraticasGit.pdf)
 
 ## 📄 Licença
 
-Este projeto está licenciado sob a Licença GNU - veja o arquivo LICENSE.md para detalhes.
+Este projeto está licenciado sob a Licença CC 1.0 Universal - veja o arquivo [LICENSE.md] para detalhes.
 
 ## 🛠️ Problemas Comuns
 
@@ -156,16 +164,24 @@ Este projeto está licenciado sob a Licença GNU - veja o arquivo LICENSE.md par
 - Verifique as configurações do banco de dados
 - Consulte a documentação do Expo para problemas de compatibilidade
 
+## Autores  do projeto
+
+- José Roberto
+- Francisco Macedo
+- Diego Humberto
+- João Gabriel ferreira 
+
+
 ## 📞 Contato
 
-Seu Nome - macedo270701@gmail.com
+Francisco Macedo - macedo270701@gmail.com
 
-Projeto Link: [https://github.com/seu-usuario/news-app]
+Link do projeto: [https://github.com/NativeNews2024-2/NativeNewsApp]
+
+NativeNews by Francisco Macedo is marked with CC0 1.0 
 
 ```
 
-## 🔍 Próximos Passos
+## TODO list
 
-- Implementar testes unitários
-- Melhorar a segurança de autenticação
-- Adicionar notificações
+Para acessar a lista de tarefas a fazer: [Lista de Tarefas](TODO.md)
